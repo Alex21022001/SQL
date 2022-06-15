@@ -1,17 +1,27 @@
-package bookstable;
+package entity;
 
-public class Books {
-    public Books(int id, String title, int year, int quantity) {
-        this.id = id;
-        this.title = title;
-        this.year = year;
-        this.quantity = quantity;
-    }
+public class Books extends Entity {
 
     private int id;
     private String title;
     private int year;
     private int quantity;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     @Override
     public String toString() {
